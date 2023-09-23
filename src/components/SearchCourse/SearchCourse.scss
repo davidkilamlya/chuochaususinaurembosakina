@@ -1,0 +1,125 @@
+.course-search-container {
+  width: 100vw;
+  padding: 20px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .search-button-holder {
+    width: 100%;
+    max-width: 500px;
+    // box-shadow: 0 4px 8px 0 #999;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    .search-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 0.8;
+
+      .search {
+        width: 100%;
+        height: 100%;
+        padding: 7px;
+        outline: none;
+
+        border: 1px solid #ddd;
+      }
+      .suggestion-div {
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        .suggestion-list {
+          display: flex;
+          position: absolute;
+          border: 1px solid #ddd;
+          top: 0;
+          left: 0;
+          right: 0;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          border-radius: 3px;
+          background-color: var(--white-color);
+          width: 100%;
+          max-width: 200px;
+          span {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            &:hover {
+              background-color: #efefef;
+            }
+          }
+        }
+      }
+    }
+    .button-search-div {
+      flex: 0.2;
+      width: 100%;
+
+      .button-search {
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 7px;
+        cursor: pointer;
+        background-color: var(--black-color);
+        color: var(--white-color);
+      }
+    }
+  }
+  .course-table-container {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    max-width: 500px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 #ddd;
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      th[colspan="2"] {
+        text-align: center;
+      }
+      th[rowspan="2"] {
+        text-align: center;
+      }
+
+      tr {
+        .total {
+          text-align: center;
+          font-weight: bold;
+          background-color: #f2f2f2;
+        }
+      }
+    }
+  }
+}

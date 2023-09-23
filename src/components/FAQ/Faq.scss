@@ -1,0 +1,39 @@
+// FAQ.scss
+
+$primary-color: #1d3b6d;
+$secondary-color: #6c757d;
+
+.faq {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    .faq-list {
+      .faq-item {
+        text-align: left;
+        margin-bottom: 30px;
+
+        .faq-question {
+          font-size: 20px;
+          color: $primary-color;
+          margin-bottom: 10px;
+        }
+
+        .faq-answer {
+          font-size: 16px;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

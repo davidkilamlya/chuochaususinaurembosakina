@@ -1,0 +1,16 @@
+/* ReusableHeader.scss */
+.reusable-header{
+width: 100%;
+height: fit-content;
+background-color:  var(--white-color);
+display: flex;
+.nav{
+  width: 100vw;
+  display: flex;
+  justify-content:space-between;
+  align-items:space-between;
+  .logo{
+    background-color: red;
+  }
+}
+}

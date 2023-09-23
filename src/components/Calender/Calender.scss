@@ -1,0 +1,175 @@
+.calendar-container {
+  height: 100vh;
+  // width: 80vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  gap: 40px;
+  // background-color: #ddd;
+}
+
+.rbc-calendar {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  // padding: 40px !important;
+}
+
+.rbc-btn-group {
+  .rbc-active {
+    background-color: #ddd !important;
+    color: #000 !important;
+  }
+  button {
+    background-color: var(--secondary-color) !important;
+    color: var(--white-color) !important;
+    border: none !important;
+  }
+}
+.rbc-header {
+  color: var(--secondary-color);
+}
+.rbc-button-link {
+  color: #fff !important;
+  font-weight: 600;
+}
+.rbc-month-row {
+  // border-top: 1px solid var(--secondary-color) !important;
+  border-top: none !important;
+  z-index: 1 !important;
+}
+.rbc-day-bg,
+.rbc-header {
+  border-left: none !important;
+}
+.rbc-month-view {
+  // border: 1px solid var(--secondary-color) !important ;
+  background-image: url("https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Slider/THE%20GIVES%20(25).jpg?updatedAt=1695333410762") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size:cover;
+}
+.rbc-off-range-bg {
+  background: #999 !important;
+}
+.rbc-header {
+  background-color: var(--secondary-color) !important;
+  color: var(--white-color) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 15px !important;
+}
+.rbc-date-cell {
+  // background-color: #DAE4FF !important;
+  color: #000;
+  display: flex;
+  text-align: center !important;
+
+  align-items: center;
+  justify-content: center;
+}
+.rbc-row-bg {
+  background-color: rgba($color: #000, $alpha: 0.5) !important;
+}
+.rbc-toolbar {
+  display: flex !important;
+  align-items: center !important;
+  // flex-wrap: nowrap !important;
+  justify-content: stretch !important;
+  background-color: transparent !important;
+  // flex-direction: column !important;
+  gap: 20px;
+}
+.rbc-row {
+  z-index: 1 !important;
+}
+.rbc-event-content {
+  // background-color: red;
+  height: 100vw;
+  text-align: center !important;
+  display: flex;
+  align-items: center;
+}
+.rbc-event {
+  // background-color: #fff !important;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.rbc-toolbar-label {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.rbc-now {
+  background-color: red;
+}
+.rbc-event-content {
+  // height: 100%;
+}
+.rbc-row-segment {
+  height: 100%;
+  display: flex !important;
+  align-self: center !important;
+  // padding: 10px !important;
+}
+.rbc-today {
+  background-color: rgba($color: #000, $alpha: 0.4) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.rbc-agenda-table {
+  thead {
+    tr {
+      display: flex !important;
+      flex-wrap: wrap !important;
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding: 10px 2px !important;
+        // display: flex;
+        // flex-direction: row !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+      }
+    }
+  }
+}
+.rbc-agenda-content {
+  width: 100% !important;
+}
+
+.rbc-agenda-event-cell {
+  width: fit-content !important;
+
+  text-align: center;
+
+  align-items: center;
+
+  justify-content: center;
+}
+.rbc-agenda-time-cell {
+  text-align: center;
+}
+
+.rbc-agenda-date-cell {
+  text-align: center;
+}
+
+.rbc-allday-cell {
+  background-color: var(--secondary-color) !important;
+}

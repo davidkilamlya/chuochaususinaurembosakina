@@ -1,0 +1,36 @@
+.quick-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  font-weight: 700;
+  gap: 5px;
+  padding: 20px;
+  overflow: hidden;
+  .quick {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--secondary-color);
+
+    display: flex;
+    gap: 4px;
+    
+    .quick-secondary {
+      color: #000;
+    }
+  }
+  .quick-icon {
+    color: red;
+    font-size: 20px;
+    transform: rotate(-34deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.quick-red{
+  color: red;
+  text-decoration: underline;
+}

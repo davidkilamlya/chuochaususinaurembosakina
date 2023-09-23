@@ -1,0 +1,59 @@
+.update-recent {
+  display: flex;
+  // align-items: center;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+// .home{
+//     background-color: yellow;
+// }
+
+.the-gives-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  .the-gives {
+    font-size: 46px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.academics-home {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.go-academics-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .go-academics {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 80px;
+    padding: 7px;
+    a {
+      color: var(--white-color);
+      text-decoration: none;
+    }
+    &:hover {
+      background-color: lighten($color: #000, $amount: 10%);
+    }
+  }
+}

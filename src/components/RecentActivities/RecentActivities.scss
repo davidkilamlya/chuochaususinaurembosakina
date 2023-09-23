@@ -1,0 +1,36 @@
+.recent-activities {
+  padding: 20px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .activity-list {
+    list-style: none;
+    padding: 0;
+
+    .activity-item {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      .activity-date {
+        font-size: 14px;
+        color: #888;
+      }
+
+      .activity-description {
+        font-size: 16px;
+        margin-top: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}

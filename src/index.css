@@ -1,0 +1,52 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+  --primary-color: #D60019;
+  --primary-color-n:#F0004A;
+  --secondary-color: #D12450;
+  --white-color: #ffffff;
+  --black-color: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+ font-family: 'PT Sans', sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  scroll-margin-right: 90px;
+}
+
+/* Target the scroll bar */
+::-webkit-scrollbar {
+  width: 0px; /* Set the width of the scroll bar */
+}
+
+/* Track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color */
+}
+
+/* Thumb (the draggable scrolling handle) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color); /* Set the color of the thumb */
+  border-radius: 2px; /* Add rounded corners to the thumb */
+}
+
+/* On hover, the thumb color */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the thumb on hover */
+}
+
+/* Corner (between the vertical and horizontal scroll bars) */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1; /* Set the background color */
+}

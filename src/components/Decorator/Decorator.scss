@@ -1,0 +1,71 @@
+.decorator-container{
+    // background-color: #acb33d;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    // display: none;
+    
+    left: 10%;
+    // display: flex;
+    top: -10%;
+    left: 90;
+    bottom: 0;
+    right: 0;
+    transform: rotate(15deg);
+    border: 2px solid #999;
+     animation: spin 2s 1s 0.2s 5 both both;
+
+    border-radius: 50%;
+    box-shadow: 20vw 0px 0px 20px #ddd;
+    transform-origin: 50% 50%;
+::before{
+    content: "";
+    //  background-color: #acb33d;
+    height: 70%;
+    width: 70%;
+    position: absolute;
+     border: 2px solid #999;
+    animation-name: example;
+    //  animation-name: example;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: rotate(30deg);
+    left: 90px;
+    
+    transform-origin: 100% -100%;
+    border-radius: 50%;
+     box-shadow: 60vw -170px 0px 20px #efefef;
+}
+::after{
+    content: "";
+     border: 2px solid #999;
+   
+    height: 460px;
+    width: 460px;
+    position: absolute;
+    // transform: rotate(30deg);
+    border-radius: 50% 150% 0 0;
+    left: 0px;
+    
+    transform-origin: 50% -100%;
+    border-radius: 50%;
+     box-shadow: 60vw 0px 0px 20px #999;
+}
+}
+
+// @keyframes example {
+
+//     from{
+//         background-color: green;
+//         transform: rotate(0deg);
+//     }
+    
+//     to{
+//         background-color: blue;
+//         transform: rotate(360deg);
+//     }
+    
+// }

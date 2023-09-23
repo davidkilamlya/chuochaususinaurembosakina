@@ -1,0 +1,55 @@
+.college-application-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    text-align: center;
+  }
+
+  section {
+    margin-bottom: 20px;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 10 24' xmlns='http://www.w3.org/2000/svg'><path d='M2 12l8 8' stroke='black' stroke-width='2' stroke-linecap='round' fill='none' /></svg>");
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 10px;
+    }
+
+    input[type="file"] {
+      padding: 0;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}

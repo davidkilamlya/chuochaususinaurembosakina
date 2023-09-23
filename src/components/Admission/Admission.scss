@@ -1,0 +1,79 @@
+// Admission.scss
+
+$primary-color: #1d3b6d;
+$secondary-color: #6c757d;
+
+.admission {
+  background-color: #fbe6e8;
+  padding: 60px 20px;
+
+  .admission-container {
+    max-width: 800px;
+
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $secondary-color;
+      margin-bottom: 40px;
+    }
+
+    .admission-steps {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      .admission-step {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+        .step-number {
+          font-size: 24px;
+          color: var(--primary-color);
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          font-size: 20px;
+          color: var(--primary-color);
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          color: $secondary-color;
+        }
+      }
+    }
+    .apply-button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .apply {
+        background-color: var(--black-color);
+        color: var(--white-color);
+        cursor: pointer;
+        width: 80px;
+        padding: 7px;
+        margin-top: 20px;
+        border: none;
+      }
+    }
+  }
+}

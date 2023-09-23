@@ -1,0 +1,32 @@
+.activity-detail-page {
+  padding: 20px;
+
+  .activity-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .activity-content {
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .activity-date {
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .activity-description {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .activity-full-content {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+}

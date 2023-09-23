@@ -1,0 +1,52 @@
+// Footer.scss
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+.footer {
+  background-color: #83000f;
+  color: #fff;
+  padding: 40px 0;
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    .contact-info,
+    .social-media {
+      flex: 1;
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      .social-icon {
+        color: #fff;
+        font-size: 24px;
+        margin-right: 15px;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}

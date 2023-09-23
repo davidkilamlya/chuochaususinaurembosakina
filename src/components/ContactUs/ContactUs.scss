@@ -1,0 +1,71 @@
+// ContactUs.scss
+
+$primary-color: #1d3b6d;
+$secondary-color: #6c757d;
+
+.contact-us {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      color: $primary-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $secondary-color;
+      margin-bottom: 40px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        label {
+          font-size: 16px;
+          color: $primary-color;
+          margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        textarea {
+          resize: vertical;
+          height: 150px;
+        }
+      }
+
+      button {
+        background-color: $primary-color;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
