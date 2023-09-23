@@ -9,6 +9,7 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import Loader from "../Loader/Loader";
 import { Helmet } from "react-helmet-async";
+import Whatsapp from "../Whatsapp/Whatsapp";
 
 const CollegeApplicationForm = () => {
   const [isDisabled, setIsDisabled] = useState(false);
@@ -198,6 +199,7 @@ const CollegeApplicationForm = () => {
         <meta name="author" content="Chuo cha Ususi na Urembo Sakina" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
+      <Whatsapp/>
       <HeaderContact />
       <PageHeader />
       {isLoading && <Loader />}

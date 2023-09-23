@@ -10,6 +10,7 @@ import Contact from "../../components/HeaderContact/HeaderContact";
 import { Helmet } from "react-helmet-async";
 import QuickImage from "../QuickImage/QuickImage";
 import AcademicsCard from "../AcademicsCard/AcademicsCard";
+import Whatsapp from "../Whatsapp/Whatsapp";
 const image = [
   "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Slider/SKY_9356.jpg?updatedAt=1695333411286",
   "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Slider/THE%20GIVES%20(25).jpg?updatedAt=1695333410762",
@@ -35,6 +36,7 @@ function Aboutus() {
         <meta name="author" content="David Kilamlya" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
+      <Whatsapp />
       <div className="about-container-page">
         {/* put background div with absolute position to act as background for about us page */}
         <div className="aboutBackGround"></div>

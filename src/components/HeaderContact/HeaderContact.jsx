@@ -12,11 +12,27 @@ function HeaderContact() {
           <FaPhone />{" "}
           {window.screen.width > 670 ? (
             <div style={{ display: "flex", gap: "10px" }}>
-              <span>+255 689 168 775</span>/
-              <span>+255 752 566 508</span>
+              <a
+                style={{ textDecoration: "none", color: "#fff" }}
+                href="tel:+255689168775"
+              >
+                <span>+255 689 168 775</span>
+              </a>
+              /
+              <a
+                href="tel:+255752566508"
+                style={{ textDecoration: "none", color: "#fff" }}
+              >
+                <span>+255 752 566 508</span>
+              </a>
             </div>
           ) : (
-            <span>+255 689 168 775</span>
+            <a
+              href="tel:+255689168775"
+              style={{ textDecoration: "none", color: "#fff" }}
+            >
+              <span>+255 689 168 775</span>
+            </a>
           )}
         </div>
       </div>
