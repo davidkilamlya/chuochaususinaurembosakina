@@ -70,7 +70,7 @@ const NavBar = () => {
           theme: "light",
         });
         setIsLoading(false);
-        console.log("empty data found");
+     
       } else {
         const contactData = {
           name,

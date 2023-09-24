@@ -2,11 +2,11 @@
 
 import React from "react";
 import "./Admission.scss";
-import {useNavigate} from "react-router-dom"
-import applicationForm from "../../assets/Documents/applicationForm.pdf"
+import { useNavigate } from "react-router-dom";
+import applicationForm from "../../assets/Documents/applicationForm.pdf";
 
 const Admission = () => {
-  const navigate= useNavigate()
+  const navigate = useNavigate();
   return (
     <section className="admission">
       <div className="admission-container">
@@ -21,11 +21,6 @@ const Admission = () => {
                 Complete the online application form and provide the necessary
                 documents.
               </p>
-              <input
-                type="file"
-                id="applicationForm"
-                accept=".pdf,.doc,.docx"
-              />
             </div>
           </div>
           <div className="admission-step">
@@ -53,7 +48,7 @@ const Admission = () => {
           </a>
         </div>
         <div className="apply-button">
-          <button className="apply" onClick={()=>navigate("/admission")}>
+          <button className="apply" onClick={() => navigate("/admission")}>
             Apply Now
           </button>
         </div>

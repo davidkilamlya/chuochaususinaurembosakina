@@ -36,7 +36,7 @@ function Flier() {
     setCurrentSlide((prevSlide) =>
       prevSlide === image.length - 1 ? 0 : prevSlide + 1
     );
-    console.log("slider images", image);
+    
   };
 
   const handlePrevSlide = () => {

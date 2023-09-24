@@ -55,7 +55,7 @@ const CollegeApplicationForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(educationalInfo, personalInfo);
+
     setIsLoading(true);
     const config = {
       headers: {
@@ -105,7 +105,6 @@ const CollegeApplicationForm = () => {
 
       // formData.append("file", disabledForm);
 
-      console.log(applicationData, "form data", formData.getAll("name"));
       //check values are not empty and toastify if is empty
 
       if (
@@ -130,7 +129,18 @@ const CollegeApplicationForm = () => {
         });
         setIsLoading(false);
       } else {
-        console.log("formdata is ", formData);
+        if (disabledForm.type !== "application/pdf") {
+          toast.error("Please upload a valid PDF file", {
+            position: "top-right",
+            autoClose: false,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        }
         await axiosInstance
           .post(process.env.REACT_APP_END_POINT_ADMISSION, formData)
           .then((res) => {
@@ -145,6 +155,24 @@ const CollegeApplicationForm = () => {
               progress: undefined,
               theme: "light",
             });
+            formData.delete(
+              "name",
+              "nationality",
+              "DOB",
+              "marital",
+              "region",
+              "address",
+              "parentPhone",
+              "disability",
+              "healthProblem",
+              "disabledForm",
+              "talentsAndSkills",
+              "primarySchool",
+              "primaryGraduation",
+              "secondarySchool",
+              "secondaryGraduation"
+            );
+
             setPersonalInfo({
               fullName: "",
               nationality: "",
@@ -199,7 +227,7 @@ const CollegeApplicationForm = () => {
         <meta name="author" content="Chuo cha Ususi na Urembo Sakina" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
-      <Whatsapp/>
+      <Whatsapp />
       <HeaderContact />
       <PageHeader />
       {isLoading && <Loader />}
@@ -333,7 +361,24 @@ const CollegeApplicationForm = () => {
                 <input
                   type="file"
                   name="medicalCertificate"
-                  onChange={(e) => setDisabledForm(e.target.files[0])}
+                  accept=".pdf"
+                  onChange={(e) => {
+                    console.log(e);
+                    if (e.target.files[0].type !== "application/pdf") {
+                      toast.error("Please upload a valid PDF file", {
+                        position: "top-right",
+                        autoClose: false,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                      });
+                    } else {
+                      setDisabledForm(e.target.files[0]);
+                    }
+                  }}
                   placeholder="Attach a medical certificate"
                 />
               </>
