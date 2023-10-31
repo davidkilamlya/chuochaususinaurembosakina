@@ -1,15 +1,16 @@
-import './App.css';
-import Home from './Container/Home/Home';
+import "./App.css";
+import Home from "./Container/Home/Home";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
   Route,
 } from "react-router-dom";
-import Gallery from "./components/Gallery/Gallery"
-import Aboutus from './components/AboutusPage/Aboutus';
-import CollegeApplicationForm from './components/ApplicationPage/ApplicationPage';
-import NotFound from './components/NotFound/NotFound';
+import Gallery from "./components/Gallery/Gallery";
+import Aboutus from "./components/AboutusPage/Aboutus";
+import CollegeApplicationForm from "./components/ApplicationPage/ApplicationPage";
+import NotFound from "./components/NotFound/NotFound";
+import Sponsorship from "./Container/Sponsorship/Sponsorship";
 
 function App() {
   const router = createBrowserRouter(
@@ -17,6 +18,7 @@ function App() {
       <Route>
         <Route index path="/" element={<Home />} />
         <Route path="/aboutUs" element={<Aboutus />} />
+        <Route path="/sponsorship" element={<Sponsorship />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/admission" element={<CollegeApplicationForm />} />
         <Route path="*" element={<NotFound />} />

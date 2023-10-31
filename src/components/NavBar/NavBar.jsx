@@ -70,7 +70,6 @@ const NavBar = () => {
           theme: "light",
         });
         setIsLoading(false);
-     
       } else {
         const contactData = {
           name,
@@ -126,7 +125,11 @@ const NavBar = () => {
           title={`st.monica_girls_secondary_logo`}
           loading="eager"
         /> */}
-          <h1>THE GIVES</h1>
+          <img
+            src="https://ik.imagekit.io/fa4kq1qqo/the_gives/gatewaylogo-transparent_cropped.png?updatedAt=1698507560705"
+            alt="chuo_cha_ususi_na_urembo_logo"
+            className="logo"
+          />
         </div>
         <ul className="navbar_list">
           {navList.map((item, index) => (

@@ -37,70 +37,73 @@ function Home() {
         fourthText={"Professional"}
         fifthText={"Trainers"}
       />
-      <Title title={"Academics"} id={"academics"} />
-      <div className="academics-container-home">
-        <div className="academics-home">
-          <AcademicsCard
-            image={
-              "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/SKY_9551.jpg?updatedAt=1695333410551"
-            }
-            title="Hairdressing"
-            description="This course will teach you the skills and knowledge you need to become a professional hairdresser. You will learn how to cut, style, and color hair, as well as how to provide other hair care services."
-            // translations={[
-            //   { language: "English", text: "Hairdressing" },
-            //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
-            // ]}
-          />
-          <AcademicsCard
-            image={
-              "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/APA_0016.jpg?updatedAt=1695437751392"
-            }
-            title="Makeup"
-            description="This course will teach you the skills and knowledge you need to become a professional makeup artist. You will learn how to apply makeup for a variety of occasions, including weddings, special events, and everyday wear."
-            // translations={[
-            //   { language: "English", text: "Makeup" },
-            //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
-            // ]}
-          />
-          <AcademicsCard
-            image={
-              "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/SKY_9315.jpg?updatedAt=1695333410708"
-            }
-            title="Dreadlocks"
-            description="This course will teach you everything you need to know about dreadlocks, from how to install them to how to maintain them. You will learn how to create different types of dreadlocks, and you will also learn how to repair and style dreadlocks."
-            // translations={[
-            //   { language: "English", text: "Makeup" },
-            //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
-            // ]}
-          />
-          <AcademicsCard
-            image={
-              "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/THE%20GIVES%20(106).jpg?updatedAt=1695333410746"
-            }
-            title="Natural hair"
-            description="This course will teach you the skills and knowledge you need to care for natural hair. You will learn how to wash, condition, and style natural hair, as well as how to treat common hair problems."
-            // translations={[
-            //   { language: "English", text: "Makeup" },
-            //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
-            // ]}
-          />
-          <AcademicsCard
-            image={
-              "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/SKY_9607.jpg?updatedAt=1695333410276"
-            }
-            title="Henna"
-            description="This course will teach you everything you need to know about henna, from how to prepare it to how to apply it. You will learn how to create different henna designs, and you will also learn how to care for henna tattoos."
-            // translations={[
-            //   { language: "English", text: "Makeup" },
-            //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
-            // ]}
-          />
-        </div>
-        <div className="go-academics-div">
-          {" "}
-          <button className="go-academics">
-            <Link to={"academics"}>View More</Link>{" "}
-          </button>
+      <div className="academics_shape">
+        <Title title={"Academics"} id={"academics"} />
+        <div className="academics-container-home">
+          <div className="academics-home">
+            <AcademicsCard
+              image={
+                "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/SKY_9551.jpg?updatedAt=1695333410551"
+              }
+              title="Hairdressing"
+              description="This course will teach you the skills and knowledge you need to become a professional hairdresser. You will learn how to cut, style, and color hair, as well as how to provide other hair care services."
+              // translations={[
+              //   { language: "English", text: "Hairdressing" },
+              //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
+              // ]}
+            />
+            <AcademicsCard
+              image={
+                "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/APA_0016.jpg?updatedAt=1695437751392"
+              }
+              title="Makeup"
+              description="This course will teach you the skills and knowledge you need to become a professional makeup artist. You will learn how to apply makeup for a variety of occasions, including weddings, special events, and everyday wear."
+              // translations={[
+              //   { language: "English", text: "Makeup" },
+              //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
+              // ]}
+            />
+            <AcademicsCard
+              image={
+                "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/SKY_9315.jpg?updatedAt=1695333410708"
+              }
+              title="Dreadlocks"
+              description="This course will teach you everything you need to know about dreadlocks, from how to install them to how to maintain them. You will learn how to create different types of dreadlocks, and you will also learn how to repair and style dreadlocks."
+              // translations={[
+              //   { language: "English", text: "Makeup" },
+              //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
+              // ]}
+            />
+            <AcademicsCard
+              image={
+                "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/THE%20GIVES%20(106).jpg?updatedAt=1695333410746"
+              }
+              title="Natural hair"
+              description="This course will teach you the skills and knowledge you need to care for natural hair. You will learn how to wash, condition, and style natural hair, as well as how to treat common hair problems."
+              // translations={[
+              //   { language: "English", text: "Makeup" },
+              //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
+              // ]}
+            />
+            <AcademicsCard
+              image={
+                "https://ik.imagekit.io/fa4kq1qqo/the_gives/assets/Gallery/Banner/SKY_9607.jpg?updatedAt=1695333410276"
+              }
+              title="Henna"
+              description="This course will teach you everything you need to know about henna, from how to prepare it to how to apply it. You will learn how to create different henna designs, and you will also learn how to care for henna tattoos."
+              // translations={[
+              //   { language: "English", text: "Makeup" },
+              //   { language: "Swahili", text: "Upendelezaji wa Nywele" },
+              // ]}
+            />
+          </div>
+
+          <div className="go-academics-div">
+            {" "}
+            <button className="go-academics">
+              <Link to={"academics"}>View More</Link>{" "}
+            </button>
+          </div>
         </div>
       </div>
       <Title title={"Admission"} id={"admission"} />
@@ -132,7 +135,7 @@ function Home() {
       />
 
       <Location />
-      <Whatsapp/>
+      <Whatsapp />
       <Footer />
     </div>
   );

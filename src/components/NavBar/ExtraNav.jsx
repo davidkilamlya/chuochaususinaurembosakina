@@ -8,6 +8,11 @@ function ExtraNav() {
       link: "/admission",
     },
     {
+      title: "Sponsorship",
+      link: "/sponsorship",
+      isNew: true,
+    },
+    {
       title: "News and Updates",
       link: "/updates",
     },
@@ -15,18 +20,19 @@ function ExtraNav() {
       title: "Gallery",
       link: "/gallery",
     },
-    {
-      title: "Resources",
-      link: "/resources",
-    },
-    {
-      title: "Co-curricular",
-      link: "/curricular",
-    },
-    {
-      title: "Our Life",
-      link: "/life",
-    },
+    // {
+    //   title: "Resources",
+    //   link: "/resources",
+    // },
+    // {
+    //   title: "Co-curricular",
+    //   link: "/curricular",
+     
+    // },
+    // {
+    //   title: "Our Life",
+    //   link: "/life",
+    // },
   ];
 
   return (
@@ -34,10 +40,17 @@ function ExtraNav() {
       <div className="extraNav-container">
         {extraNav.map((item, index) => {
           return (
-            <div className="extraNav-nav" key={index}>
-              <a href={item.link} className="extraNav-nav-link">
-                {item.title}
-              </a>
+            <div className="new_alert_nav">
+              { item.isNew &&
+                <div className="new_alert">
+                <span>new</span>
+              </div>
+              } 
+              <div className="extraNav-nav" key={index}>
+                <a href={item.link} className="extraNav-nav-link">
+                  {item.title}
+                </a>
+              </div>
             </div>
           );
         })}

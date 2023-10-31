@@ -1,0 +1,73 @@
+.form-content-header {
+  background-color: #fff;
+  width: 100%;
+  //   padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #dddd;
+  overflow: hidden;
+  .form-content {
+    width: 100%;
+    height: 100%;
+    .top-bar {
+      width: 100%;
+      background-color: var(--primary-color);
+      height: 10px;
+    }
+    .form-content-header-body-bar {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      .left-bar {
+        color: #fff;
+        background-color: var(--logo-primary-color);
+        // height: 100%;
+        width: 5px;
+      }
+      .form-content-header-body {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .separator {
+          background-color: #efefef;
+          width: 100%;
+          height: 1px;
+        }
+        .form-content-header-body-details {
+          display: flex;
+          flex-direction: column;
+        }
+        .form-content-header-body-title {
+          .input-title {
+            font-weight: 600;
+            font-size: 15px;
+          }
+          .optional-title{
+            font-weight: 300;
+          }
+        }
+        .form-content-header-body-details {
+          .input-text {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            &:focus {
+              border-bottom: 1px dashed #ddd;
+            }
+          }
+          .form-content-radio-button{
+            display: flex;
+            gap: 10px;
+            
+            span{
+                width: fit-content;
+                height: 100%;
+                text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

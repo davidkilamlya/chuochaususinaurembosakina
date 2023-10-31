@@ -45,12 +45,13 @@ function SearchCourse() {
     filterCourse();
     setShowSuggestions(false);
     setTableShown(true);
+    console.log("searching...")
     // if (courseFound.length === 0) {
     //   setTableShown(false);
     // } else {
     //   setTableShown(true);
     // }
-    console.log(courseFound);
+    // console.log(courseFound);
   };
 
   const handleSuggestionClick = (suggestion) => {
@@ -90,7 +91,7 @@ function SearchCourse() {
             className="search"
             id=""
           />
-          <div className="suggestion-div">{renderSuggestions()}</div>
+          <div className="suggestion-div" >{renderSuggestions()}</div>
         </div>
         <div className="button-search-div">
           <button onClick={handleSearch} className="button-search">
