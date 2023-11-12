@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./InputFormTemplate.scss";
 
 function InputFormTemplate({
@@ -6,17 +6,23 @@ function InputFormTemplate({
   radioOptionalTitle,
   radioOptionalValue,
   radioOptional,
+  optionalValue,
+  radioOptionalChange,
   radioData,
   inputText,
   dateInput,
   radioName,
   value,
+  name,
   placeholder,
   inputTitle,
   onChange,
   checkbox,
   radio,
 }) {
+
+  
+
   return (
     <div className="form-content-header">
       {header && (
@@ -57,8 +63,9 @@ function InputFormTemplate({
               <div className="form-content-header-body-details">
                 <input
                   type="text"
-                  onChange={onChange}
+                  onChange={(e) => onChange(e)}
                   value={value}
+                  name={name}
                   placeholder={placeholder}
                   className="input-text"
                 />
@@ -82,8 +89,9 @@ function InputFormTemplate({
               <div className="form-content-header-body-details">
                 <input
                   type="date"
-                  onChange={onChange}
+                  onChange={(e) => onChange(e)}
                   value={value}
+                  name={name}
                   placeholder={placeholder}
                   className="input-text"
                 />
@@ -110,13 +118,13 @@ function InputFormTemplate({
                     <input
                       type="radio"
                       name={radio.radioName}
-                      onChange={onChange}
+                      onChange={(e) => onChange(e)}
                       value={radio.value}
                     />
                     <span>{radio.label}</span>
                   </div>
                 ))}
-                {radioOptional === "yes" && (
+                {radioOptionalValue === "yes" && (
                   <div className="form-content">
                     {/* <div className="top-bar"></div> */}
                     <div className="form-content-header-body-bar">
@@ -132,9 +140,9 @@ function InputFormTemplate({
                         <div className="form-content-header-body-details">
                           <input
                             type="text"
-                            onChange={onChange}
-                            value={radioOptionalValue}
-                            
+                            onChange={(e) => radioOptionalChange(e)}
+                            value={optionalValue}
+                            name={name}
                             className="input-text"
                           />
                         </div>
